@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* preloader */
+ #main{
+              font-family:'Times New Roman', Times, serif;
+          width: 100%;
+           height: 100vh;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+             background: rgb(255, 255, 255);
+            z-index: 999999999;
+           
+         }
+        .contain {
+            display: flex;
+            flex-direction: row;
+            
+        }
+       
+        .part1 {
+          font-family:'Times New Roman', Times, serif;
+            font-weight: 600;
+            font-size: 4rem;
+            color: #636363;
+          margin-left: 37%;
+          position: absolute;
+          top: 35%;
+        }
+
+        
+
+        .loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: 2rem;
+            transform: translate(-50%, -50%);
+            height: 5px;
+            width: 25rem;
+            background-color: lightgrey;
+        }
+
+        .loading {
+            background-color: #2659ff;
+            width: 5rem;
+            height: 5px;
+            animation: animation 5s infinite;
+        }
+        .contain span{
+          color:#2659ff;
+        }
+
+        @keyframes animation {
+            0% {
+                transform: translateX(0rem);
+            }
+
+            50% {
+                transform: translateX(20rem);
+            }
+
+            100% {
+                transform: translateX(0rem);
+            }
+        }
+      
+
+ ::-webkit-scrollbar{
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#2659ff; 
+}
+::-webkit-scrollbar-track{
+  background: rgb(0, 0, 0);
+}
+ 
+:root{
+    --red:#2659ff;
+}
+/*  ***************header css starts */
+
+header{
+  width:95%;
+  background: rgb(249, 252, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top:0; left: 0;
+  z-index: 1000;
+  padding:0.8rem ;
+  padding-left: 50px;
+  padding-right:80px ;
+  box-shadow: 0 .9rem 1rem rgba(0, 68, 255, 0.1);
+}
+
+header .logo{
+  font-size: 2rem;
+  color:#666;
+  font-weight: 800;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+
+header .logo span{
+  color:#2659ff;
+   font-size: 30px!important;
+}
+
+header .navbar ul{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+ margin-right: 20%;
+}
+
+header .navbar ul li{
+  margin-left: 1.5rem;
+  text-align: center;
+ position: relative;
+ top: 10px;
+ right: 30px;
+}
+
+header .navbar ul li a{
+  color:rgb(146, 146, 146);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight:800;
+  transition: 0.3s;
+  
+  font-family: 'Times New Roman', Times, serif;
+ 
+ 
+  
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover{
+ 
+  border-bottom: .20rem solid #2659ff!important;
+  padding:.2rem 0!important;
+}
+#menu{
+  font-size: 3rem;
+  color:#999;
+  cursor: pointer;
+  display: none;
+}
+/* end */
+
+
+body{
+ 
+  margin-top: 20px;
+  text-align: center;
+  margin: 0%;
+}
+
+/* home page */
+
+.home{
+    position: absolute;
+    top: 5%;
+    left:0%;
+    display: flex;
+    padding: 30px;
+   text-align: left;
+    
+    flex-wrap: wrap;
+}
+
+.home .image{
+    flex:1 1 40rem;
+}
+
+.home .image img{
+    width:100%;
+}
+
+.home .content{
+    flex:1 1 40rem;
+}
+#icon{
+    color:#2659ff;
+    font-size: 5rem;
+    font-weight: 600;
+    
+}
+
+.home .content h3{
+    color:#666;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top:150px ;
+}
+
+.home .content p{
+    color:#999;
+    font-size: 2rem;
+    padding: 25px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.btn{
+    display: inline-block;
+    margin-top: -1rem!important;
+    padding:0.5rem 2rem;
+    border-radius: 5rem;
+    background:var(--red);
+    color:#fff;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    font-size: 1.7rem;
+    text-decoration: none;
+   margin-left: 14rem;
+}
+
+.btn::before{
+    content:'';
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background:#444;
+    clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+    transition:.3s linear;
+}
+
+.btn:hover::before{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+
+
+/* userimagre */
+#userimage{
+  position: absolute !important;;
+  top:25%!important;
+  right:5%!important;
+  width: 100px!important;
+  height: 100px!important;
+}
+
+#userimage img{
+  border: 2px solid #636363!important;
+  border-radius: 200px!important;
+}
+#userimage img:hover{
+ border: 2px solid #2659ff!important;
+  border-radius: 200px!important;
+   transform: scale(1.1);
+
+}
+
+
+/* vaccine style */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+table{
+  position:fixed;
+}
+#filter {
+  display: block;
+  left: 40%;
+  position: relative;
+  cursor: pointer;
+}
+.viewFilters {
+  transition: display 0.5s linear;
+  margin-top: 5px;
+  display: none;
+}
+.viewFilters button {
+  cursor: pointer;
+}
+.view {
+  transition: display 0.5s linear;
+  margin-top: 5px;
+  display: block;
+}
+#testdata {
+  display: block;
+  margin-top: 10px;
+  background-color: #2659ff;
+  color: #fff;
+  width: 60%;
+  font-weight: bolder;
+  font-size: 35px;
+  padding: 8px;
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-bottom: 70px;
+
+}
+#testdata:hover{
+      background-color: #d1d1d1;
+  color: #2659ff;
+}
+#name,
+#lod {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  background-color: #2659ff;
+  width: 50%;
+  font-size: 2em;
+  top: 50%;
+  left: 28%;
+  position: absolute;
+}
+#container {
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+}
+.input {
+  position: relative;
+  top: 2%;
+}
+
+table,
+tr,
+th,
+td {
+  padding: 10px;
+  /* border-top: 1px solid black; */
+  position: relative;
+  margin-top: 2%;
+  transition: all 0.5s linear;
+  
+  font-weight: bolder;
+  /* font-size: 0.8rem; */
+}
+
+table {
+  width: 98%;
+  transition: all 0.5s linear;
+  border-collapse: collapse;
+  text-align: center;
+}
+#pincode,
+#search,
+select {
+  width: 38%;
+  height: 28px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #b9e0ff;
+  color: #000000;
+  background-clip: padding-box;
+  border: 2px solid #0059ff;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: all 0.5s linear;
+  margin-right: 4%;
+}
+#search {
+  margin-top: 10px;
+  transition: all 0.5s linear;
+}
+#date {
+  width: 38%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+background-color: #b9e0ff;
+  color: #000000;
+  background-clip: padding-box;
+  border: 2px solid #0059ff;
+  border-radius: 0.25rem;
+  margin-left: 4%;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  
+}
+button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 1.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #fff;
+  background-color: #0059ff;
+  border-color: #0059ff;
+}
+button:hover{
+   color: #0059ff;
+  background-color: #fff;
+  border-color: #106dfa;
+}
+/* footer {
+  width: 100%;
+  position: fixed;
+  color: rgb(0, 0, 0);
+  bottom: 0;
+  font-weight: bold;
+  background-color: rgba(4, 240, 228, 0.993);
+} */
+.source {
+  position: absolute;
+  left: 5%;
+}
+.power {
+  position: relative;
+  left: 80%;
+}
+a {
+  color: rgb(0, 81, 255);
+}
+#lod {
+  background-color: rgb(191, 192, 194);
+  color: rgb(0, 81, 255);
+}
+select {
+   width: 40%!important;
+  height: 45px;
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-bottom: 8%;
+  background-color: #b9e0ff;
+  color: #000000;
+}
+@media screen and (max-width: 748px) {
+  #pincode,
+  #date,
+  #search,
+  select {
+    width: 50%;
+    margin-top: 5px;
+  }
+  #search {
+    display: block;
+    width: 55%;
+  }
+  select {
+    width: 59%;
+    height: 10%;
+  }
+  #testdata {
+    width: 80%;
+  }
+  .viewFilters button {
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  #name,
+  #lod {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    background-color: rgb(0, 80, 255);
+    width: 50%;
+    font-size: 2em;
+    top: 40%;
+    left: 26%;
+    position: absolute;
+  }
+  #lod {
+    background-color: #b9e0ff;
+  color: #000000;
+  }
+  table,
+  td,
+  th {
+    width: 10%;
+    overflow-x: auto;
+  }
+  .source {
+    position: absolute;
+    left: 27.5%;
+    bottom: 0;
+    display: block;
+  }
+  .power {
+    position: absolute;
+    left: 29%;
+    bottom: 40%;
+  }
+  footer {
+    display: block;
+    height: 6%;
+    font-size: 0.9em;
+  }
+  #name,
+  #lod {
+    color: rgb(255, 255, 255)!important;
+    font-weight: bolder;
+    background-color:#2e63eb!important;
+    width: 50%;
+    font-size: 1.5em;
+    top: 40%;
+    left: 28%;
+    position: absolute;
+  }
+}
+thead tr:hover{
+color: #2e63eb;
+background-color: #ffffff;
+border: 1px solid #2e63eb;
+}
+
+tr:nth-child(even) {
+  background-color: #4e97f7;
+  color: #ffffff;
+}
+/* tr:nth-child(even):hover{
+  background-color: #ffffff;
+  color: #2e63eb;
+} */
+
+td:hover {
+  background-color: #3155f3fd;
+  color: #ffffff;
+}
+.lod {
+  color: #3155f3fd;
+  position: relative;
+  left: 40%;
+}
+
+/* vaccine section */
+.vaccsection{
+  margin-top: 54%;
+  margin-bottom: 20%!important;
+}
+#vaccheading{
+  font-size: 100px!important;
+  color: rgb(107, 107, 107);
+font-family:'Times New Roman', Times, serif;
+text-transform: capitalize;
+margin-bottom: 1%;
+
+}
+#vaccheading1{
+  margin-top: 0%;
+  margin-bottom: 2%;
+}
+
+
+.scroll-top{
+    position: fixed;
+    bottom: 0.3rem; right:0px;
+    z-index: 100;
+    display: none;
+}
+
+.scroll-top img{
+    height: 8em;
+    width: 130px;
+}

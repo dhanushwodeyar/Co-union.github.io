@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
+    <script src="https://kit.fontawesome.com/144e981d01.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/cotracker.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co_tracker</title>
+</head>
+<body onload="fun1()">
+
+<!-- preloader -->
+
+<!-- <div id="loading"></div> -->
+<div id="main">
+
+    <div class="contain">
+        <div class="part1">
+            C<span class="fas fa-virus"></span>-UNION
+        </div>
+
+    </div>
+
+
+    <div class="loader">
+        <div class="loading">
+        </div>
+    </div>
+</div>
+
+
+    <header>
+    
+        <a href="#" class="logo">C<span class="fas fa-virus"></span>-union</a>
+    
+        <div id="menu" class="fas fa-bars"></div>
+    
+        <nav class="navbar">
+            <ul>
+            <li><a class="active" href="index.html">home</a></li>
+            <li><a href="#conews">Co-Tracker</a></li>
+            <li><a href="index.html">about</a></li>
+            <li><a href="index.html">contact</a></li>
+            <li><a href="login.html">sign in </a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    home section starts 
+    
+    <section class="home" id="home">
+    
+        <div class="content">
+    
+            
+            <h3>C<span id="icon" class="fas fa-virus"></span>-Tracker<span id="i1">.</span><span id="i2">.</span><span id="i3">.</span>
+            </h3>
+            <p>The most important factor in preventing the spread of this virus locally is to empower the citizens with the
+                right
+                information and taking precautions as per the advisories being issued by Ministry of Health & Family
+                Welfare.</p>
+            <a href="https://www.gavi.org/covid19?gclid=CjwKCAjwjdOIBhA_EiwAHz8xm4CLkrtlmYDvU0pk0ttaMXCHkJ5_1RgfHfzCrIHbLvjTwVUV7Y74XBoC99EQAvD_BwE"
+                class="btn">protect now</a>
+    
+        </div>
+    
+        <div class="image">
+            <img src="images/Coronavirus second wave-rafiki.png" alt="">
+    
+    
+        </div>
+    
+    </section>
+<!-- section end and starts new section -->
+<section class="tt">
+    <h1 class="theading">c<span class="fas fa-virus"></span>-track table</h1>
+    <div class="tbox">
+    <div class="wrapper">
+        <div class="statistic">
+    
+            <div class="total_case_box">
+            
+                <h2>Total Cases</h2>
+                <p id="total_cases"></p>
+            </div>
+            <div class="box_wrapper">
+                <div class="box">
+                    <h2>Total Death</h2>
+                    <p id="total_death"> </p>
+                </div>
+    
+                <div class="box">
+                    <h2>Total Recovery</h2>
+                    <p id="total_recovered"> </p>
+                </div>
+    
+                <div class="box">
+                    <h2>New case</h2>
+                    <p id="new_case"> </p>
+                </div>
+    
+                <div class="box">
+                    <h2>New Death</h2>
+                    <p id="new_death"> </p>
+                </div>
+            </div>
+    
+            <table id="countries_stat" >
+                <tr>
+                    <th>Country</th>
+                    <th>Cases</th>
+                    <th>Deaths</th>
+                    <th>serious critical</th>
+                    <th>total recovered</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+
+</section>
+
+
+<!-- map section -->
+<section class="comap">
+
+<div class="map">
+   
+
+    <div class="maps">
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div id="mm" class="elfsight-app-2eea0913-09f0-4d3a-a085-e8730ae6f6d2"></div>
+    </div>
+    </div>
+</section>
+<!-- cograp -->
+<div class="cgrap">
+<div class="container">
+    <h1 class="theading text-center mt-4 heading">c<span class="fas fa-virus"></span>-graph</h1>
+   
+    <canvas id="myChart"></canvas>
+</div>
+<div class="myList"></div>
+</div>
+<!-- indian cotracker start-->
+<div class="indian">
+
+<div class="container text-center">
+    <h1 class="">Covid-19 Cases In <span id="country"></span> <img src="" alt="" id="flag"></h1>
+    <div class="card-deck text-center">
+        <div class="card mb-2">
+            <div class="card-body bg-primary text-light rounded">
+                <h5 class="card-title"><i class="fas fa-tachometer-alt fa-2x"></i></h5>
+                <h4 class="card-text">Active Cases</h4>
+                <p class="card-text badge badge-outline-light" id="Active_Cases">0</p>
+            </div>
+        </div>
+        <div class="card mb-2">
+            <div class="card-body bg-info text-light rounded">
+                <h5 class="card-title"><i class="fas fa-list fa-2x"></i></h5>
+                <h4 class="card-text">Total Cases</h4>
+                <p class="card-text badge badge-outline-light" id="Total_Cases">0</p>
+            </div>
+        </div>
+        <div class="card mb-2">
+            <div class="card-body bg-warning text-light rounded">
+                <h5 class="card-title"><i class="fas fa-times-circle fa-2x"></i></h5>
+                <h4 class="card-text">Critical Cases</h4>
+                <p class="card-text badge badge-outline-light" id="Critical_Cases">0</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body bg-danger text-light rounded">
+                <h5 class="card-title"><i class="fa fa-times fa-2x"></i></h5>
+                <h4 class="card-text">Total Death</h4>
+                <p class="card-text badge badge-outline-light" id="Total_Death">0</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body bg-success text-light rounded">
+                <h5 class="card-title"><i class="fas fa-check-square fa-2x"></i></h5>
+                <h4 class="card-text">Recovered Cases</h4>
+                <p class="card-text badge badge-outline-light" id="Recovered_Cases">0</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body bg-secondary text-light rounded">
+                <h5 class="card-title"><i class="fas fa-eye fa-2x"></i></h5>
+                <h4 class="card-text">Total Test Done</h4>
+                <p class="card-text badge badge-outline-light" id="Total_Test_Done">0</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- indian cotracker ends-->
+<!-- footer starts -->
+
+<footer class="footer" id="end">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>ABOUT CO-UNION</h4>
+                <ul>
+                    <P>CO_UNION is a Website is easy to use and provides and highlights a social responsiblity . All The
+                        service provided is complettly free and realtime services it requires only a user intraction</P>
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="symptoms.html">Symptoms</a></li>
+                    <li><a href="#">co-news</a></li>
+                    <li><a href="#">co-tracker</a></li>
+                    <li><a href="#">co-conferance</a></li>
+                    <li><a href="#">co-pay</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>quick links</h4>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#conewsinfo">co-news</a></li>
+                    <li><a href="#conews">live news</a></li>
+                    <li><a href="#end">End</a></li>
+                    <li><a href="#">refresh</a></li>
+                    <li><a href="#">back top</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <div class="share" data-aos="fade-down">
+                        <a href="https://www.youtube.com/" class="fab fa-youtube"></a>
+                        <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                        <a href="https://twitter.com/" class="fab fa-twitter"></a>
+                        <a href="https://www.instagram.com" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+                <div class='cont'>
+                    <h4>contact info</h4>
+                    <p> <i class="fas fa-phone"></i> +91 7019863983 </p>
+                    <p> <i class="fas fa-envelope"></i> counionofficial@gmail.com </p>
+                    <p> <i class="fas fa-map-marker-alt"></i> Bangalore, india - 560102. </p>
+                </div>
+            </div>
+        </div>
+        <div class="scrolltop float-right">
+            <a href="#home" id="back-to-top" class="scroll-top">
+                <img src="images/Scroll 1.png" alt="top">
+
+            </a>
+
+        </div>
+    </div>
+
+</footer>
+<!-- footer ends -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    
+    <!-- home section ends -->
+
+    <script>
+        function fun1() {
+            setTimeout(() => {
+                document.getElementById("i1").style.visibility = "hidden";
+                document.getElementById("i3").style.visibility = "visible";
+                document.getElementById("icon").style.color = "#2659ff";
+                // document.getElementById("ic").style.color = "#ddd";
+                preloader();
+                fun2()
+            }, 500);
+        }
+        function fun2() {
+            setTimeout(() => {
+                document.getElementById("i1").style.visibility = "visible";
+                document.getElementById("i2").style.visibility = "hidden";
+                document.getElementById("icon").style.color = "#26ffa5";
+                // document.getElementById("ic").style.color = "#26ffa5";
+                fun3()
+            }, 500);
+        }
+        function fun3() {
+            setTimeout(() => {
+                document.getElementById("i1").style.visibility = "visible";
+                document.getElementById("i2").style.visibility = "visible";
+                document.getElementById("i3").style.visibility = "hidden";
+                document.getElementById("icon").style.color = "#26ccff";
+                // document.getElementById("ic").style.color = "#26ccff";
+                fun1()
+            }, 500);
+        }
+
+
+        
+            //...........back-to-top..................
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 50) {
+                        $('#back-to-top').fadeIn();
+                    } else {
+                        $('#back-to-top').fadeOut();
+                    }
+                });
+                // scroll body to 0px on click
+                $('#back-to-top').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 2000);
+                    return false;
+                });
+            });
+
+    </script>
+    <script src="jsscript/cotracker.js"></script>
+    <script>
+        function preloader() {
+            setTimeout(() => {
+                document.getElementById("main").style.display = 'none';
+            }, 4000)
+
+        };
+    </script>
+</body>
+</html>

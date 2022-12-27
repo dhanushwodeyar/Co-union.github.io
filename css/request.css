@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* preloader */
+ #main{
+              font-family:'Times New Roman', Times, serif;
+          width: 100%;
+           height: 100vh;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+             background: rgb(255, 255, 255);
+            z-index: 999999999;
+           
+         }
+        .contains {
+            display: flex;
+            flex-direction: row;
+            
+        }
+       
+        .part1 {
+          font-family:'Times New Roman', Times, serif;
+            font-weight: 600;
+            font-size: 4rem;
+            color: #636363;
+          margin-left: 37%;
+          position: absolute;
+          top: 35%;
+        }
+
+        
+
+        .loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: 2rem;
+            transform: translate(-50%, -50%);
+            height: 5px;
+            width: 25rem;
+            background-color: lightgrey;
+        }
+
+        .loading {
+            background-color: #2659ff;
+            width: 5rem;
+            height: 5px;
+            animation: animation 5s infinite;
+        }
+        .contains span{
+          color:#2659ff;
+        }
+
+        @keyframes animation {
+            0% {
+                transform: translateX(0rem);
+            }
+
+            50% {
+                transform: translateX(20rem);
+            }
+
+            100% {
+                transform: translateX(0rem);
+            }
+        }
+      
+
+ ::-webkit-scrollbar{
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#2659ff; 
+}
+::-webkit-scrollbar-track{
+  background: rgb(0, 0, 0);
+}
+ 
+:root{
+    --red:#2659ff;
+}
+/*  ***************header css starts */
+
+header{
+  width: 100%!important;
+  background: rgb(249, 252, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top:0; left: 0;
+  z-index: 1000;
+  padding:0.8rem ;
+  padding-left: 50px;
+  padding-right:80px ;
+  box-shadow: 0 .9rem 1rem rgba(0, 68, 255, 0.1);
+}
+
+header .logo{
+  font-size: 2rem;
+  color:#666;
+  font-weight: 800;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+
+header .logo span{
+  color:#2659ff;
+   font-size: 30px!important;
+}
+
+header .navbar ul{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+
+}
+
+header .navbar ul li{
+  margin-left: 1.5rem;
+  text-align: center;
+ position: relative;
+ top: 10px;
+ right: 30px;
+}
+
+header .navbar ul li a{
+  color:rgb(146, 146, 146);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight:800;
+  transition: 0.3s;
+  
+  font-family: 'Times New Roman', Times, serif;
+ 
+ 
+  
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover{
+ 
+  border-bottom: .20rem solid #2659ff!important;
+  padding:.2rem 0!important;
+}
+#menu{
+  font-size: 3rem;
+  color:#999;
+  cursor: pointer;
+  display: none;
+}
+/* end */
+
+
+
+/* home page */
+
+.home{
+    position: absolute;
+    top: 5%;
+    left:0%;
+    display: flex;
+    padding: 30px;
+   text-align: left;
+    
+    flex-wrap: wrap;
+}
+
+.home .image{
+    flex:1 1 40rem;
+}
+
+.home .image img{
+    width:100%;
+}
+
+.home .content{
+    flex:1 1 40rem;
+}
+#icon{
+    color:#2659ff;
+    font-size: 5rem;
+    font-weight: 600;
+    
+}
+
+.home .content h3{
+    color:#666;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top:150px ;
+}
+
+.home .content p{
+    color:#999;
+    font-size: 1.6rem;
+    padding: 25px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.btn{
+    display: inline-block;
+    margin-top: -1rem!important;
+    padding:0.5rem 2rem;
+    border-radius: 5rem;
+    background:var(--red);
+    color:#fff;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    font-size: 1.7rem;
+    text-decoration: none;
+   margin-left: 14rem;
+}
+
+.btn::before{
+    content:'';
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background:#444;
+    clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+    transition:.3s linear;
+}
+
+.btn:hover::before{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+
+
+
+
+
+
+
+/* userimagre */
+#userimage{
+  position: absolute !important;;
+  top:25%!important;
+  right:-18%!important;
+  width: 100px!important;
+  height: 100px!important;
+}
+
+#userimage img{
+  border: 2px solid #636363!important;
+  border-radius: 200px!important;
+}
+#userimage img:hover{
+ border: 2px solid #2659ff!important;
+  border-radius: 200px!important;
+   transform: scale(1.1);
+
+}
+
+/* ::-webkit-scrollbar{
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#2659ff; 
+}
+::-webkit-scrollbar-track{
+  background: rgb(0, 0, 0);
+} */
+/*  ***************contact us starts********************/
+
+.contactus{
+  margin-top: 65%!important;
+  width:100% ;
+  height: 100vh;
+  padding-top: 0.5mm;
+  position: relative;
+}
+.cohead{
+  /* margin-bottom: 10px!important; */
+}
+.contactus::before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background: linear-gradient(330deg, #111113 0%, #0101ff 10%, #0059ff 59%, #fff 0%);
+z-index: -1;
+}
+.contactus i{
+  color:#fff;
+  margin: 2px;
+}
+
+.contactimg{
+  width: 750px;
+  height: auto;
+  position: absolute;
+  top: -8.5%;
+  left: 0%;
+  bottom: 0%;
+}
+/*  ***************contact us starts********************/
+/*  ***************submit animestion starts********************/
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.subbut {
+  width: 150px;
+  height: 40px;
+  border: 0;
+  outline: none;
+  background: #ffffff;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  line-height: center;
+  margin:0 5px;
+  color:#1f66ff ;
+  font-size: 1rem;
+  font-weight: 700;
+  
+ 
+ 
+}
+.subbut p{
+  margin: 5px;
+  color:#1f66ff;
+}
+.check-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  box-shadow: 0 0 12px -2px #606060;
+  position: absolute;
+  top: 0;
+  right: -40px;
+  opacity: 0;
+
+}
+
+.check-box svg {
+  width: 20px;
+  margin: 10px;
+ 
+}
+
+svg path {
+  stroke-width: 3;
+  stroke: #fff!important;
+  stroke-dasharray: 34;
+  stroke-dashoffset: 34;
+  stroke-linecap: round;
+}
+
+.active1 {
+  background: #1f66ff;
+  transition: 1s;
+}
+
+.active1 .check-box {
+  right: 0;
+  opacity: 1;
+  transition: 1s;
+}
+
+.active1 p {
+  margin-top:8px ;
+  color: #ffffff;
+  margin-right: 40px;
+  transition: 1s;
+}
+
+.active1 svg path {
+  stroke-dashoffset: 0;
+  transition: 1s;
+  transition-delay: 1s;
+}
+.formbtn{
+  
+  
+  margin:0 5px;
+  padding: 12px 35px;
+  outline: none;
+  color:#1f66ff ;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+.form-control{
+  border-radius: 20px;
+}
+
+/*  ***************submit animestion ends********************/
+/* container */
+/* .container{margin-left: 200px;} */
+
+/* list */
+.containes {
+  position: relative;
+  display: inline-block;
+  
+}
+.num{
+  margin-top: -3%!important;
+}
+
+.autoComplete {
+  display: inline-block;
+  position: relative;
+  
+}
+
+#dataList {
+  display: none;
+  height: 40vh;
+  overflow: auto;
+  left: 0;
+  border: 2px solid #1553ff;
+}
+#dataList option {
+  font-family: arial;
+  font-size: 14.8px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+#dataList option:hover {
+  background-color: #1553ff;
+  color: #ffffff;
+}
+
+#dataList.show {
+  display: block;
+}
+/* medicine */
+
+
+
+
+
+.scroll-top{
+    position: fixed;
+    bottom: 0.3rem; right:0px;
+    z-index: 100;
+    display: none;
+}
+
+.scroll-top img{
+    height: 8em;
+    width: 130px;
+}
+/* image uplode */
+.contain{
+  height: 110px;
+  width: 250px;
+  position: absolute;
+  right: 2%;
+  top:17%
+}
+.contain .wrapper{
+  position: relative;
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  background: #fff;
+  border: 2px dashed #c2cdda;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.wrapper.active{
+  border: none;
+}
+.wrapper .image{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.wrapper .icon{
+  font-size: 100px;
+  color: #2659ff;
+}
+.wrapper .text{
+  font-size: 20px;
+  font-weight: 500;
+  color: #2659ff;
+}
+.wrapper #cancel-btn i{
+  position: absolute;
+  font-size: 20px;
+  right: 15px;
+  top: 15px;
+  color: #2659ff;
+  cursor: pointer;
+  display: none;
+}
+.wrapper.active:hover #cancel-btn i{
+  display: block;
+}
+.wrapper #cancel-btn i:hover{
+  color: #e74c3c;
+}
+.wrapper .file-name{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 2px;
+  color: #fff;
+  display: none;
+  background: #2659ff;
+}
+.wrapper.active:hover .file-name{
+  display: block;
+}
+.contain #custom-btn{
+  margin-top: 30px;
+  display: block;
+  width: 80%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  cursor: pointer;
+ background: #fff;
+  color: #2659ff;
+ 
+  margin-left: 25px;
+}
+.contain #custom-btn:hover{
+     background: #2659ff;
+        color: #fff;
+}

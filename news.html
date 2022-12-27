@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://kit.fontawesome.com/144e981d01.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="jsscript/news.js"></script>
+  <link rel="stylesheet" href="css/news.css">
+  <!-- aos cdn link  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Co-News
+  </title>
+</head>
+
+<body onload="fun1()">
+
+  <!-- <div id="loading"></div> -->
+  <div id="main">
+
+    <div class="contain">
+      <div class="part1">
+        C<span class="fas fa-virus"></span>-UNION
+      </div>
+
+    </div>
+
+
+    <div class="loader">
+      <div class="loading">
+      </div>
+    </div>
+  </div>
+
+
+  <header>
+
+    <a href="#" class="logo">C<span class="fas fa-virus"></span>-union</a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a class="active" href="index.html">home</a></li>
+        <li><a href="#conews">Co-news</a></li>
+        <li><a href="index.html">about</a></li>
+        <li><a href="index.html">contact</a></li>
+        <li><a href="login.html">sign in </a></li>
+
+      </ul>
+    </nav>
+
+  </header>
+
+
+  <section id="conewsinfo" class=contain>
+    <section class="box">
+      <div class="image">
+        <img src="images/People watching the news-pana.png">
+      </div>
+      <div class="content">
+        <h2>C<span id="icon" class="fas fa-virus"></span>-news<span id="i1">.</span><span id="i2">.</span><span
+            id="i3">.</span></h2>
+        <p>
+          Continually seize impactful vortals rather than future-proof supply chains.
+          Uniquely exploit emerging niches via fully tested meta-services.
+          Competently pursue standards compliant leadership skills vis-a-vis pandemic "outside the box" thinking.
+          Objectively Continually seize impactful vortals
+        </p>
+        
+      </div>
+    </section>
+  </section>
+  <section class="background">
+  <h1 class="co" data-aos="fade-up">CO-UNION NEWS</h1>
+  <div class=" col-lg-4 col-12">
+    <div id="conews" class="news_card" data-aos="zoom">
+      <h1 class="text-center">C<span id="ic" class="fas fa-virus"></span>-union Global Headlines on COVID-19
+        (Coronavirus)</h1>
+      <div class="news_container" style="margin-top:2rem;" id="news">
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer class="footer" id="end">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>ABOUT CO-UNION</h4>
+          <ul>
+            <P>CO_UNION is a Website is easy to use and provides and highlights a social responsiblity . All The
+              service provided is complettly free and realtime services it requires only a user intraction</P>
+
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="symptoms.html">Symptoms</a></li>
+            <li><a href="#">co-news</a></li>
+            <li><a href="#">co-tracker</a></li>
+            <li><a href="#">co-conferance</a></li>
+            <li><a href="#">co-pay</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>quick links</h4>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="#conewsinfo">co-news</a></li>
+            <li><a href="#conews">live news</a></li>
+            <li><a href="#end">End</a></li>
+            <li><a href="#">refresh</a></li>
+            <li><a href="#">back top</a></li>
+
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <div class="share" data-aos="fade-down">
+              <a href="https://www.youtube.com/" class="fab fa-youtube"></a>
+              <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+              <a href="https://twitter.com/" class="fab fa-twitter"></a>
+              <a href="https://www.instagram.com" class="fab fa-instagram"></a>
+            </div>
+          </div>
+          <div class='cont'>
+            <h4>contact info</h4>
+            <p> <i class="fas fa-phone"></i> +91 7019863983 </p>
+            <p> <i class="fas fa-envelope"></i> counionofficial@gmail.com </p>
+            <p> <i class="fas fa-map-marker-alt"></i> Bangalore, india - 560102. </p>
+          </div>
+        </div>
+      </div>
+      <div class="scrolltop float-right">
+        <a href="#home" id="back-to-top" class="scroll-top">
+          <img src="images/Scroll 1.png" alt="top">
+
+        </a>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <script>
+    function fun1() {
+      setTimeout(() => {
+        document.getElementById("i1").style.visibility = "hidden";
+        document.getElementById("i3").style.visibility = "visible";
+        document.getElementById("icon").style.color = "#2659ff";
+        document.getElementById("ic").style.color = "#2659ff";
+        preloader();
+        fun2()
+      }, 500);
+    }
+    function fun2() {
+      setTimeout(() => {
+        document.getElementById("i1").style.visibility = "visible";
+        document.getElementById("i2").style.visibility = "hidden";
+        document.getElementById("icon").style.color = "#26ffa5";
+        document.getElementById("ic").style.color = "#26ffa5";
+        fun3()
+      }, 500);
+    }
+    function fun3() {
+      setTimeout(() => {
+        document.getElementById("i1").style.visibility = "visible";
+        document.getElementById("i2").style.visibility = "visible";
+        document.getElementById("i3").style.visibility = "hidden";
+        document.getElementById("icon").style.color = "#26ccff";
+        document.getElementById("ic").style.color = "#26ccff";
+        fun1()
+      }, 500);
+    }
+  </script>
+
+
+
+
+  <script>
+    function preloader() {
+      setTimeout(() => {
+        document.getElementById("main").style.display = 'none';
+      }, 4000)
+
+    };
+  </script>
+  <script>
+    //...........back-to-top..................
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('#back-to-top').fadeIn();
+        } else {
+          $('#back-to-top').fadeOut();
+        }
+      });
+      // scroll body to 0px on click
+      $('#back-to-top').click(function () {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 2000);
+        return false;
+      });
+    });
+  </script>
+
+  <!--..............animation...............-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 130, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 1200, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    });
+  </script>
+
+</body>
+
+</html>

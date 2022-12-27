@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
+    <script src="https://kit.fontawesome.com/144e981d01.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/vaccine.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covax-Tracker</title>
+</head>
+
+<body onload="preloader()">
+
+    <!-- preloader -->
+
+    <!-- <div id="loading"></div> -->
+    <div id="main">
+
+        <div class="contain">
+            <div class="part1">
+                C<span class="fas fa-virus"></span>-UNION
+            </div>
+
+        </div>
+
+
+        <div class="loader">
+            <div class="loading">
+            </div>
+        </div>
+    </div>
+
+
+    <header>
+
+        <a href="#" class="logo">C<span class="fas fa-virus"></span>-union</a>
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="index.html">home</a></li>
+                <pre><li><a href="#conews">Covax-Tracker</a></li></pre>
+                <pre><li><a class="aa" id="facename" href="#"></a></li></pre>
+                <div id="userimage"><img src="" id="imgs"></div></a>
+                <pre><li><a class="logout" href="login.html">logout</a></li></pre>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+
+
+            <h3>C<span id="icon" class="fas fa-virus"></span>vax-Tracker<span id="i1">.</span><span id="i2">.</span><span
+                    id="i3">.</span>
+            </h3>
+            <p>The COVID-19 vaccines produce protection against the disease, as a result of developing an immune response to the
+            SARS-Cov-2 virus. Developing immunity through vaccination means there is a reduced risk of developing the illness and
+            its consequences. This immunity helps you fight the virus if exposed.</p>
+            <a href="https://www.gavi.org/covid19?gclid=CjwKCAjwjdOIBhA_EiwAHz8xm4CLkrtlmYDvU0pk0ttaMXCHkJ5_1RgfHfzCrIHbLvjTwVUV7Y74XBoC99EQAvD_BwE"
+                class="btn">protect now</a>
+
+        </div>
+
+        <div class="image">
+            <img src="images/Vaccine.gif" alt="">
+
+
+        </div>
+
+    </section>
+    <!-- section end and starts new section -->
+    
+<section class="vaccsection">
+        <center>
+            <div id="container">
+                <h2 id="vaccheading" >vaccine tracking</h2>
+                <h2 id="vaccheading1">Check Your Nearest Vaccination Centre And Slots Availability</h2>
+                <span><button class="filters" id="filter">Filters</button></span>
+                <div id="viewFilters" class="viewFilters">
+                    <button value="18" id="filterAge" onclick="startFilter(this)">
+                        18+
+                    </button>
+                    <button value="covaxin" id="filterCovaxin" onclick="startFilter(this)">
+                        Covaxin
+                    </button>
+                    <button value="covishield" id="filtercovishield" onclick="startFilter(this)">
+                        Covishield
+                    </button>
+                    <button value="sputnik V" id="filtersputnikV" onclick="startFilter(this)">
+                        Sputnik V
+                    </button>
+                    <button value="Free" id="feeFree" onclick="startFilter(this)">
+                        Free
+                    </button>
+                    <button value="All" id="showAll" onclick="startFilter(this)">
+                        Show All
+                    </button>
+                </div>
+                <div class="input">
+                    <form>
+                        <h4 style="color: rgb(0, 81, 255)">
+                            <u>Search Vaccination Centre By Pincode</u>
+                        </h4>
+                        <input type="text" id="pincode" placeholder="PINCODE" maxlength="6" autofocus required />
+                        <input type="date" id="date" />
+                        <h3>(OR)</h3>
+                        <h4 style="color: rgb(0, 81, 255)">
+                            <u>Search Vaccination Centre By District</u>
+                        </h4>
+                        <select id="stateList">
+                            <option value="null">Select State</option>
+                        </select>
+                        <select id="district">
+                            <option value="null">Please Select State</option>
+                        </select>
+                        <input type="text" id="search" placeholder="Filter Your Villege/Town/City" />
+                        <span id="testdata"></span>
+                    </form>
+                </div>
+                <div style="overflow: auto">
+                    <table id="mytable">
+                        <thead style="background-color: #2659ff; color: #ffffff; text-transform: uppercase;">
+                            <tr>
+                                <th>Date</th>
+                                <th>Name Of The Vaccination Centre</th>
+                                <th>Address Of The Vaccination Centre</th>
+                                <th>Villege/Town/City</th>
+                                <th>District</th>
+                                <th>State</th>
+                                <th>Fee</th>
+                                <th>No:Of Sessions</th>
+                                <th>Vaccine Name</th>
+                                <th>Age Limit</th>
+                                <th>Doses Available</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tb"></tbody>
+                    </table>
+                </div>
+            </div>
+            <span id="name"></span>
+            <span id="lod"></span>
+        </center>
+        
+
+    <div class="scrolltop float-right">
+        <a href="#home" id="back-to-top" class="scroll-top">
+            <img src="images/Scroll 1.png" alt="top">
+    
+        </a>
+    
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+    <!-- home section ends -->
+
+    <script>
+        fun1()
+        function fun1() {
+            setTimeout(() => {
+                document.getElementById("i1").style.visibility = "hidden";
+                document.getElementById("i3").style.visibility = "visible";
+                document.getElementById("icon").style.color = "#2659ff";
+                // document.getElementById("ic").style.color = "#ddd";
+                preloader();
+                fun2()
+            }, 500);
+        }
+        function fun2() {
+            setTimeout(() => {
+                document.getElementById("i1").style.visibility = "visible";
+                document.getElementById("i2").style.visibility = "hidden";
+                document.getElementById("icon").style.color = "#26ffa5";
+                // document.getElementById("ic").style.color = "#26ffa5";
+                fun3()
+            }, 500);
+        }
+        function fun3() {
+            setTimeout(() => {
+                document.getElementById("i1").style.visibility = "visible";
+                document.getElementById("i2").style.visibility = "visible";
+                document.getElementById("i3").style.visibility = "hidden";
+                document.getElementById("icon").style.color = "#26ccff";
+                // document.getElementById("ic").style.color = "#26ccff";
+                fun1()
+            }, 500);
+        }
+
+
+
+        //...........back-to-top..................
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+            // scroll body to 0px on click
+            $('#back-to-top').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 2000);
+                return false;
+            });
+        });
+
+    </script>
+    <script src="jsscript/vaccine.js"></script>
+    <script>
+        function preloader() {
+            setTimeout(() => {
+                document.getElementById("main").style.display = 'none';
+            }, 4000)
+
+        };
+    </script>
+
+
+    <!-- login and logout functions -->
+    <script>
+        log();
+
+        function log() {
+            var useremail = window.sessionStorage.getItem("Useremail");
+            var fname = window.sessionStorage.getItem("facebookdisplayname");
+            var fimg = window.sessionStorage.getItem("facebookimage");
+            if (useremail != null || undefined || NaN) {
+
+                document.querySelector("#facename").innerHTML = useremail;
+                var userimg = document.querySelector('#userimage');
+                userimg.style.display = "none";
+            }
+            if (fname != null || undefined || NaN) {
+                document.querySelector("#facename").innerHTML = fname;
+
+            }
+            if (fimg != null || undefined || NaN) {
+                var userimg = document.querySelector('#userimage');
+                var userpic = document.querySelector('#imgs');
+                userpic.src = fimg;
+                userimg.append(userpic);
+
+            }
+        }
+        //logout details
+        function logout() {
+            window.location.replace("http://localhost/COUNION%20PROJECT/html/login.html");
+            window.sessionStorage.clear();
+        }
+    </script>
+
+</body>
+
+</html>

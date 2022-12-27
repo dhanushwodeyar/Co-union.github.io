@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- firebase cdn -->
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+  <!-- jquery cdn -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>selection service page</title>
+  <link rel="stylesheet" href="css/select.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<body onload="preloader()">
+
+  <!-- preloader -->
+  
+  
+  <!-- <div id="loading"></div> -->
+  <div id="main">
+  
+    <div class="contain">
+      <div class="part1">
+        C<span id="icon" class="fas fa-virus"></span>-UNION
+      </div>
+  
+    </div>
+  
+  
+    <div class="loader">
+      <div class="loading">
+      </div>
+    </div>
+  </div>
+
+
+  <header>
+    <a href="#" class="brand">c<span class="fas fa-virus"></span>-union</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a class="aa" href="#">Home</a>
+
+        <a class="aa" id="facename" href="#"></a>
+        <a class="logout" onclick="logout()" href="#logout">logout</a>
+        <div id="userimage"><img src="" id="imgs"></div></a>
+        
+      </div>
+    </div>
+  </header>
+
+  <section class="home">
+    <video class="video-slide active" src="images/pexels-artem-podrez-5752847.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="images/v1.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="images/v2.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="images/Coronavirus.mp4" autoplay muted loop></video>
+    <video class="video-slide"
+      src="images/COVID-19 V4 - 3D Animation Background - FREE Download Video Coronavirus _ No Copyright (Cinema 4D)(1080P_HD)_1.mp4"
+      autoplay muted loop></video>
+    <div class="content active">
+      <h1>symptoms<br><span>Stay Safe,Stay Home</span></h1>
+      <p>The Most Important Factor In Preventing The Spread Of This Virus Locally Is To Empower The Citizens With The Right
+      Information And Taking Precautions As Per The Advisories Being Issued By Ministry Of Health & Family Welfare.</p>
+      <a class="btn" href="symptomps1.html">Check</a>
+    </div>
+    <div class="content">
+      <h1>co-<br><span>news</span></h1>
+      <p>Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches via fully
+      tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic "outside the box"
+      thinking. Objectively Continually seize impactful vortals</p>
+      <a class="btn" href="news1.html">Read</a>
+    </div>
+    <div class="content">
+      <h1>co-<br><span>tracker</span></h1>
+      <p>The most important factor in preventing the spread of this virus locally is to empower the citizens with the right
+      information and taking precautions as per the advisories being issued by Ministry of Health & Family Welfare.</p>
+      <a class="btn" href="cotracker1.html">View</a>
+    </div>
+    <div class="content">
+      <h1>covax<br><span>tracker</span></h1>
+      <p>The COVID-19 vaccines produce protection against the disease, as a result of developing an immune response to the
+      SARS-Cov-2 virus. Developing immunity through vaccination means there is a reduced risk of developing the illness and
+      its consequences. This immunity helps you fight the virus if exposed.</p>
+      <a class="btn" href="vaccine.html">Find</a>
+    </div>
+    <div class="content">
+      <h1>Co-<br><span>med</span></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</p>
+      <a class="btn" href="request.html">Order</a>
+    </div>
+    <div class="media-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="slider-navigation">
+      <div class="nav-btn active"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+    </div>
+  </section>
+
+  <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+    //Javacript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function (manual) {
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+
+    // firbase config
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyA0ZuS8wTVo1P8q9qOy0QScpI2el6wnRN8",
+      authDomain: "counion-22627.firebaseapp.com",
+      databaseURL: "https://counion-22627-default-rtdb.firebaseio.com",
+      projectId: "counion-22627",
+      storageBucket: "counion-22627.appspot.com",
+      messagingSenderId: "417520532568",
+      appId: "1:417520532568:web:223ca36c568bce02879e2d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+
+
+
+
+    // login details
+    log();
+
+    function log() {
+      var useremail = window.sessionStorage.getItem("Useremail");
+      var fname = window.sessionStorage.getItem("facebookdisplayname");
+      var fimg = window.sessionStorage.getItem("facebookimage");
+        var timg = window.sessionStorage.getItem("twitterimage");
+        var temail = window.sessionStorage.getItem("twitteremail");
+      if (useremail != null || undefined || NaN) {
+       
+        document.querySelector("#facename").innerHTML = useremail;
+        var userimg = document.querySelector('#userimage');
+        userimg.style.display = "none";
+      }
+      if (fname != null || undefined || NaN) {
+        document.querySelector("#facename").innerHTML = fname;
+
+      }
+      if (fimg != null || undefined || NaN) {
+        var userimg = document.querySelector('#userimage');
+        var userpic = document.querySelector('#imgs');
+        userpic.src = fimg;
+        userimg.append(userpic);
+
+      }
+       if (timg != null || undefined || NaN) {
+        var userimg = document.querySelector('#userimage');
+        var userpic = document.querySelector('#imgs');
+        userpic.src = timg;
+        userimg.append(userpic);
+
+      }
+
+
+    }
+//logout details
+function  logout(){
+  firebase.auth().signOut().then(function(){
+    console.log("ok");
+  })
+   window.location.replace("http://localhost/COUNION%20PROJECT/html/counionhome.html");
+    window.sessionStorage.clear();
+}
+ 
+    // from localstorage...
+
+
+
+// image from facebook
+
+
+  </script>
+  <script>
+    function preloader() {
+      setTimeout(() => {
+        document.getElementById("main").style.display = 'none';
+      }, 4000)
+
+    };
+  </script>
+
+</body>
+
+</html>

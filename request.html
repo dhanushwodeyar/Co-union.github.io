@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/144e981d01.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<script src="https://kit.fontawesome.com/144e981d01.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/request.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Co-med</title>
+</head>
+
+<body onload="preloader()">
+
+    <!-- preloader -->
+
+    <!-- <div id="loading"></div> -->
+    <div id="main">
+
+        <div class="contains">
+            <div class="part1">
+                C<span class="fas fa-virus"></span>-UNION
+            </div>
+
+        </div>
+
+
+        <div class="loader">
+            <div class="loading">
+            </div>
+        </div>
+    </div>
+
+
+   
+
+    <!-- header section starts  -->
+    
+    <header>
+    
+        <a href="#" class="logo">C<span class="fas fa-virus"></span>-union</a>
+    
+        <div id="menu" class="fas fa-bars"></div>
+    
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">home</a></li>
+                <li><a class="aa" id="facename" href="#"></a></li>
+                <div id="userimage"><img src="" id="imgs"></div></a>
+                <li><a class="logout" href="login.html">logout</a></li>
+    
+            </ul>
+        </nav>
+    
+    </header>
+    
+    <!-- header section ends -->
+
+    <!-- section end and starts new section -->
+<!-- home section starts -->
+
+<section class="home" id="home">
+
+    <div class="content">
+
+
+        <h3>C<span id="icon" class="fas fa-virus"></span>med<span id="i1">.</span><span id="i2">.</span><span
+                id="i3">.</span>
+        </h3>
+        <p>Drugs have long been used to improve health and extend lives. The practice of drug delivery has changed dramatically in
+        the past few decades and even greater changes are anticipated in the near future.</p>
+        <a href="https://www.gavi.org/covid19?gclid=CjwKCAjwjdOIBhA_EiwAHz8xm4CLkrtlmYDvU0pk0ttaMXCHkJ5_1RgfHfzCrIHbLvjTwVUV7Y74XBoC99EQAvD_BwE"
+            class="btn">protect now</a>
+
+    </div>
+
+    <div class="image">
+        <img src="images/Medicine-rafiki (2).png" alt="">
+
+
+    </div>
+
+</section>
+<!-- section end and starts new section -->
+
+
+    <!--********contact us form starts*******-->
+    <section class="contactus" id="contactid">
+        <div class="conimg" data-aos="fade-up">
+            <img class="contactimg" src="images/Calling-bro.png">
+        </div>
+    
+        <div class="container headings text-center" data-aos="fade-up">
+            <h1 class="cohead text-center font-weight-bold ">REQUEST FOR MEDICINE</h1>
+            <P class="text-capitalize pt-2 text-center ">We're Here To Help And Answer Any Question You Might Have. We Look
+                Forward To Hearing From You </p>
+        </div>
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class=" col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 col-1">
+                    <form name="myform" id="Myform" action="javascript:valid()" method="post">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Enter Name" id="UserName" name="t1"
+                                    autocomplete="off">
+                            </div>
+    
+                            <form action="/action_page.php">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter email" id="Email" name="t2"
+                                        autocomplete="off">
+                                </div>
+    
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="autoComplete" autocomplete="off"
+                                        placeholder="S/N   	Generic / Quantity  	Type	Package Unit	Price(In Rs.)	" />
+                                    <pre> <datalist style="background: #ebf5ff;" id="dataList" /></pre>
+                                </div>
+    
+                                <form action="/action_page.php">
+                                    <div class="form-group">
+                                        <input type="number" class="num form-control" placeholder="Enter Mobile Number"
+                                            id="Mobile" name="t3" autocomplete="off">
+                                    </div>
+    
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Enter more details about your product" rows="5" name="t4"
+                                            id="Comment"></textarea>
+                                    </div>
+    
+                                    <div class="d-flex justify-content-center formbtn">
+                                        <button class="subbut" id="btn">
+                                            <p id="btnText">Submit</p>
+                                            <div class="check-box">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                                    <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                                                </svg>
+                                            </div>
+                                        </button>
+    
+                                </form>
+                            </form>
+                </div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="wrapper">
+                <div class="image">
+                    <img id="img" src="" alt="">
+                </div>
+                <div class="content">
+                    <div class="icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <div class="text">
+                        No file chosen, yet!
+                    </div>
+                </div>
+                <div id="cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="file-name">
+                    File name here
+                </div>
+            </div>
+            <button onclick="defaultBtnActive()" id="custom-btn">Choose a file</button>
+            <input id="default-btn" type="file" hidden>
+        </div>
+        
+        </div>
+    
+    </section>
+    <link rel="stylesheet" href="help.css">
+    <!--********contact us form ends*******-->
+    <!-- medicine js -->
+    <script>
+        const dataList = document.getElementById("dataList");
+        const input = document.getElementById("autoComplete");
+
+        const sectors = [
+            '1	Aminophylline : 225 mg	Tablet	10 Tablet	5.0 ',
+            '2	Vit E : 100 mg	Capsule	10 Capsule	5.34	',
+            '7	Vit E : 600 mg	Capsule	10 Capsule	21.80	',
+            '4	Vit E : 268 mg	Capsule	10 Capsule	12.82	',
+            '3	Vit E : 200 mg	Capsule	10 Capsule	8.88	',
+            '5	Vit E : 134 mg	Capsule	10 Capsule	7.70	',
+            '6	Vit E : 400 mg	Capsule	10 Capsule	15.25	',
+            '8	Vit C : 100 mg	Drop	30 ml	11.65	',
+            '9	Analgin : 500 mg	Injection	2 ml	4.54	',
+            '10	Aminophylline : 100 mg	Tablet	10 Tablet	0.93	',
+            '11	Vit C : 500 mg	Injection	5 ml	2.71	',
+            '12	Vit C : 100 mg	Injection	2 ml	1.73	',
+            '13	Amodiaquine : 200 mg	Tablet	10 Tablet	4.62	',
+            '14	Analgin : 500 mg	Tablet	10 Tablet	8.27	',
+            '15	Analgin : 500 mg	Injection	30 ml	29.44	',
+            '16	Aspirin : 50 mg	Tablet	10 Tablet	1.1	',
+            '17	Aspirin : 75 mg	Tablet	10 Tablet	1.22	',
+            '18	Aspirin : 80 mg	Tablet	10 Tablet	1.36	',
+            '19	Aspirin : 100 mg	Tablet	10 Tablet	1.28	',
+            '20	Aspirin : 150 mg	Tablet	10 Tablet	1.72	',
+            '21	Aspirin : 162.5 mg	Tablet	14 Tablet	2.2	',
+            '22	Aspirin : 500 mg	Tablet	30 Tablet	8.53	',
+            '23	Aspirin : 60 mg	Tablet	14 Tablet	2.44	',
+            '24	Aspirin : 325 mg	Tablet	14 Tablet	8.66	',
+            '25	Bacampicillin : 200 mg	Tablet	2 Tablet	5.82	',
+            '26	Bacampicillin : 400 mg	Tablet	2 Tablet	10.62	',
+            '27	Vit C : 500 mg	Tablet	10 Tablet	6.36	',
+            '28	Betamethasone Sodium Phosphate : 0.5 mg	Tablet	10 Tablet	3.44	',
+            '29	Vit C : 200 mg	Tablet	100 Tablet	26.98	',
+            '30	Vit C : 100 mg	Tablet	100 Tablet	17.62	',
+            '31	Vit C : 50 mg	Tablet	100 Tablet	11.74	',
+            '32	Betamethasone : 1 mg	Tablet	10 Tablet	6.3	',
+            '33	Riboflavin : 10 mg	Tablet	10 Tablet	1.50	',
+            '34	Betamethasone Sodium Phosphate : 4 mg	Injection	1 ml	4.4	',
+            '35	Vit B1 : 75 mg	Tablet	10 Tablet	2.98	',
+            '36	Betamethasone : 4 mg	Injection	2 ml	7.27	',
+            '37	Vit A : 5000 iu	Injection	2.5 ml	3.88	',
+            '38	Betamethasone : 0.1%	Drop	0.3 ml	2.53	',
+            '39	Vit A : 100000 iu	Injection	2 ml	3.02	',
+            '40	Betamethasone : 0.5 mg	Drop	10 ml	9.28	',
+            '41	Vit A : 50000 iu	Tablet	10 Tablet	6.20	',
+            '42	Vit A : 50000 iu	Capsule	10 Capsule	5.96	',
+            '43	Verapamil : 40 mg	Tablet	10 Tablet	6.24	',
+            '44	Verapamil : 80 mg	Tablet	10 Tablet	11.90	',
+            '45	Verapamil : 120 mg	Tablet	10 Tablet	19.64	',
+            '46	Verapamil : 240 mg	Tablet	10 Tablet	37.50	',
+            '47	Verapamil : 2.5 mg	Injection	2.5 ml	2.26	',
+            '48	Tolnaftate : 10 mg	Ointment	5 gm	3.86	',
+            '49	Tolnaftate : 10 mg	Ointment	10 gm	5.20	',
+            '50	Tolnaftate : 10 mg	Ointment	30 gm	10.34',
+            '51	Tolnaftate : 10 mg	Lotion	10 ml	6.62	               ',
+            '52	Tolnaftate : 10 mg	Lotion	15 ml	7.76	',
+            '53	Tolnaftate : 10 mg	Solution	12 ml	8.30	',
+            '54	Tolnaftate : 10 mg	Solution	20 ml	11.42	',
+            '55	Betamethasone : 0.5 mg	Drop	15 ml	9.32	',
+            '56	Betamethasone : 0.10%	Drop	5 ml	8.7	',
+            '57	Betamethasone : 0.10%	Lotion	20 ml	12.35	',
+            '58	Theophylline : 400 mg	Capsule	10 Capsule	9.62	',
+            '59	Betamethasone : 0.05%	Cream	20 gm	10.26	',
+            '60	Theophylline : 300 mg	Tablet	10 Tablet	4.51	',
+            '61	Theophylline : 200 mg	Tablet	10 Tablet	2.80	',
+            '62	Betamethasone : 0.05% w/w	Lotion	30 ml	13.06	',
+            '63	Betamethasone Valerate : 0.12% w/w	Lotion	20 ml	13.31',
+            '64	Theophylline : 100 mg	Syrup	100 ml	9.66	',
+            '65	Theophylline : 80 mg	Syrup	100 ml	9.70	',
+            '66	Theophylline : 125 mg	Capsule	10 Capsule	5.80	',
+            '67	Theophylline : 200 mg	Capsule	10 Capsule	6.68	',
+            '68	Theophylline : 400 mg	Tablet	10 Tablet	4.78	',
+            '69	Theophylline : 600 mg	Tablet	10 Tablet	8.96	',
+            '70	Theophylline : 100 mg	Tablet	10 Tablet	2.94	',
+            '71	Tetracycline : 250 mg	Capsule	10 Capsule	8.53	',
+            '72	Tetracycline : 500 mg	Capsule	10 Capsule	14.02	',
+            '73	Tetracycline : 333 mg	Capsule	6 Capsule	4.64	',
+            '74	Tetracycline : 50 mg	Tablet	10 Tablet	1.56	',
+            '75	Tetracycline : 250 mg	Tablet	10 Tablet	4.44	',
+            '76	Tetracycline : 333 mg	Tablet	10 Tablet	5.98	',
+            '77	Tetracycline : 500 mg	Tablet	10 Tablet	8.94	',
+            '78	Betamethasone : 0.05% w/w	Cream	10 gm	6.74	',
+            '79	Betamethasone : 0.05%	Cream	15 gm	8.4	',
+            '80	Betamethasone : 0.1% w/w	Cream	30 gm	18.5	',
+            '81	Betamethasone : 0.05% w/w	Cream	16 gm	11.42	',
+            '82	Betamethasone : 0.1% w/w	Cream	50 gm	14.5	',
+            '83	Betamethasone : 0.05% w/v	Lotion	28 ml	12.48	',
+            '84	Captopril : 25 mg	Tablet	10 Tablet	2.58	',
+            '85	Captopril : 50 mg	Tablet	10 Tablet	2.8	',
+            '86	Captopril : 12.5 mg	Tablet	10 Tablet	1.42	',
+            '87	Carbamazepine : 100 mg	Tablet	10 Tablet	6.68	',
+            '88	Carbamazepine : 200 mg	Tablet	10 Tablet	14.83	',
+            '89	Carbamazepine : 400 mg	Tablet	10 Tablet	26.93	',
+            '90	Carbamazepine : 300 mg	Tablet	10 Tablet	17.86	',
+            '91	Carbamazepine : 100 mg	Syrup	50 ml	11.8	',
+            '92	Carbamazepine : 100 mg	Syrup	100 ml	19.20	',
+            '93	Cefadroxil : 125 mg	Tablet	10 Tablet	10.97	',
+            '94	Cefadroxil : 250 mg	Tablet	10 Tablet	19.56	',
+            '95	Cefadroxil : 500 mg	Tablet	10 Tablet	36.30	',
+            '96	Cefadroxil : 1000 mg	Tablet	5 Tablet	40.93	',
+            '97	Cefadroxil : 125 mg	Syrup	30 ml	13.90	',
+            '98	Cefadroxil : 250 mg	Syrup	30 ml	19.07	',
+            '99	Cefadroxil : 125 mg	Syrup	60 ml	15.86	',
+            '100	Cefadroxil : 100 mg	Drop	10 ml	14.66',
+            '101	Cefotaxime Sodium : 125 mg	Injection	1 Vial	6.76	  ',
+            '102	Cefotaxime Sodium : 250 mg	Injection	1 Vial	9.75	',
+            '103	Cefotaxime Sodium : 500 mg	Injection	1 Vial	14.36	',
+            '104	Cefotaxime Sodium : 1000 mg	Injection	1 Vial	22.68	',
+            '105	Cefotaxime Sodium : 1500 mg	Injection	1 Vial	33.73	',
+            '106	Cefotaxime Sodium : 2000 mg	Injection	1 Vial	42.91	',
+            '107	Cefazolin : 125 mg	Injection	1 Vial	6.58	',
+            '108	Cefazolin : 250 mg	Injection	1 Vial	8.44	',
+            '109	Cefazolin : 500 mg	Injection	1 Vial	12.16	',
+            '110	Cefazolin : 1000 mg	Injection	1 Vial	20.32	',
+            '111	Chloroquine Phosphate : 250 mg	Tablet	10 Tablet	6.66',
+            '112	Chloroquine Phosphate : 500 mg	Tablet	5 Tablet	6.42',
+            '113	Chloroquine Phosphate : 64.5 mg	Injection	30 ml	19.20	',
+            '114	Chloroquine Phosphate : 64.5 mg	Injection	5 ml	5.64	',
+            '115	Chloroquine Phosphate : 100 mg	Syrup	60 ml	11.38	',
+            '116	Chloroquine Phosphate : 50 mg	Syrup	60 ml	14.75	',
+            '117	Chloroquine Phosphate : 40 mg	Injection	2 ml	1.83	',
+            '118	Chloroquine : 40 mg	Injection	30 ml	19.75	',
+            '119	Chloroquine : 50 mg	Suspension	450 ml	42	',
+            '120	Chloroquine Phosphate : 50 mg	Drop	10 ml	7.46	',
+            '121	Chlorpromazine : 10 mg	Tablet	10 Tablet	1.34	',
+            '122	Chlorpromazine : 25 mg	Tablet	10 Tablet	2.85	',
+            '123	Chlorpromazine : 50 mg	Tablet	10 Tablet	4.11	',
+            '124	Chlorpromazine : 100 mg	Tablet	10 Tablet	12.84	',
+            '125	Cefadroxil : 250 mg	Capsule	10 Capsule	17.76	',
+            '126	Cefadroxil : 500 mg	Capsule	4 Capsule	13.1	',
+            '127	Chlorpromazine : 200 mg	Tablet	10 Tablet	12.24	',
+            '128	Chlorpromazine : 25 mg	Injection	2 ml	2.5	',
+            '129	Ciprofloxacin : 250 mg	Tablet	4 Tablet	12.5	',
+            '130	Ciprofloxacin : 500 mg	Tablet	4 Tablet	24.02	',
+            '131	Ciprofloxacin : 750 mg	Tablet	2 Tablet	18.08	',
+            '132	Ciprofloxacin : 3 mg	Ointment	5 gm	3.84	',
+            '133	Ciprofloxacin : 3 mg	Drop	5 ml	5.34	',
+            '134	Ciprofloxacin : 3 mg	Drop	10 ml	5.94	',
+            '135	Ciprofloxacin : 100 mg	Tablet	10 Tablet	12.42	',
+            '136	Ciprofloxacin : 0.3% w/w	Ointment	3 gm	3.84	',
+            '137	Ciprofloxacin : 0.3% w/v	Drop	5 ml	7.55	',
+            '138	Ciprofloxacin : 1000 mg	Tablet	5 Tablet	46.4	',
+            '139	Ciprofloxacin : 125 mg	Suspension	60 ml	15.65	',
+            '140	Ciprofloxacin : 250 mg	Suspension	60 ml	17.07	',
+            '141	Ciprofloxacin : 250 mg	Suspension	50 ml	14.35	',
+            '142	Ciprofloxacin : 250 mg	Suspension	100 ml	23.44	',
+            '143	Cloxacillin : 250 mg	Injection	1 Vial	4.90	',
+            '144	Cloxacillin : 500 mg	Injection	1 Vial	6.12	',
+            '145	Cloxacillin : 250 mg	Capsule	10 Capsule	11.52	',
+            '146	Cloxacillin : 500 mg	Capsule	10 Capsule	19.86	',
+            '147	Cloxacillin : 125 mg	Syrup	40 ml	9.7	',
+            '148	Dexamethasone : 0.5 mg	Tablet	10 Tablet	2.15	',
+            '149	Dexamethasone : 1 mg	Tablet	10 Tablet	1.92	',
+            '150	Dexamethasone : 4 mg	Injection	20 ml	17.14	',
+            '151	Dexamethasone : 4 mg	Injection	2 ml	3.32	',
+            '152	Dexamethasone : 20 mg	Injection	5 ml	17.94	',
+            '153	Diosmin : 150 mg	Tablet	10 Tablet	12.04	',
+            '154	Diosmin : 300 mg	Tablet	10 Tablet	23.52	',
+            '155	Diosmin : 450 mg	Tablet	10 Tablet	34.94	',
+            '156	Diosmin : 500 mg	Tablet	10 Tablet	38.62	',
+            '157	Doxycycline : 100 mg	Capsule	4 Capsule	3.98	',
+            '158	Doxycycline : 200 mg	Capsule	10 Capsule	13.48	',
+            '159	Doxycycline Monohydrate : 100 mg	Tablet	10 Tablet	9.61	',
+            '160	Doxycycline Monohydrate : 200 mg	Tablet	10 Tablet	13.12	',
+            '161	Doxycycline : 50 mg	Tablet	10 Tablet	3.36	',
+            '162	Doxycycline : 25 mg	Syrup	30 ml	6.46	',
+            '163	Doxycycline Hyclate : 100 mg	Tablet	10 Tablet	5.77	',
+            '164	Doxycycline : 200 mg	Tablet	10 Tablet	11.46	',
+            '165	Doxycycline Hyclate : 200 mg	Tablet	10 Tablet	11.7	',
+            '166	Calcium Pantothenate : 50 mg	Tablet	10 Tablet	1.48	',
+            '167	Calcium Pantothenate : 100 mg	Tablet	10 Tablet	1.98	',
+            '168	Erythromycin : 2% w/w	Lotion	30 ml	13.42	',
+            '169	Erythromycin : 2% w/w	Lotion	20 ml	8.48	',
+            '170	Erythromycin : 3% w/v	Lotion	25 ml	11.46	',
+            '171	Erythromycin : 3% w/w	Cream	20 gm	10.64	',
+            '172	Silver Sulphadiazine : 1.0% w/w	Cream	25 gm	10.72	',
+            '173	Silver Sulphadiazine : 1.0% w/w	Cream	500 gm	163.76	',
+            '174	Silver Sulphadiazine : 1.0% w/w	Cream	15 gm	7.36	',
+            '175	Silver Sulphadiazine : 1.0% w/w	Cream	20 gm	8.23	',
+            '176	Silver Sulphadiazine : 1.0% w/w	Cream	30 gm	11.74	',
+            '177	Silver Sulphadiazine : 1.0% w/w	Cream	250 gm	63.40	',
+            '178	Streptomycin Sulphate : 1000 mg	Injection	1 Vial	9.46	',
+            '179	Streptomycin Sulphate : 750 mg	Injection	1 Vial	7.86	',
+            '180	Spironolactone : 100 mg	Tablet	10 Tablet	65.99	',
+            '181	Spironolactone : 50 mg	Tablet	10 Tablet	33.48	',
+            '182	Spironolactone : 25 mg	Tablet	10 Tablet	17.13	',
+            '183	Salbutamol : 2 mg	Syrup	100 ml	15.12	',
+            '184	Levosalbutamol (Levalbuterol) : 1 mg	Tablet	10 Tablet	1.38	',
+            '185	Levosalbutamol (Levalbuterol) : 2 mg	Tablet	10 Tablet	1.50	',
+            '186	Levosalbutamol (Levalbuterol) : 1 mg	Syrup	100 ml	12.75	',
+            '187	Salbutamol : 2.5 mg	Solution	3 ml	3.19	',
+            '188	Levosalbutamol (Levalbuterol) : 0.31 mg	Solution	2.5 ml	2.71	',
+            '189	Levosalbutamol (Levalbuterol) : 0.63 mg	Solution	2.5 ml	3.12	',
+            '190	Levosalbutamol (Levalbuterol) : 1.25 mg	Solution	2.5 ml	3.14	',
+            '191	Salbutamol : 50 mcg	Inhaler	1 Inhaler	8.64	',
+            '192	Salbutamol : 200 mcg	Rotacap	30 Rotacap	13.28	',
+            '193	Erythromycin : 3% w/w	Cream	15 gm	8.72	',
+            '194	Levosalbutamol (Levalbuterol) : 100 mcg	Rotacap	30 Rotacap	13.22	',
+            '195	Erythromycin : 2% w/w	Ointment	10 gm	6.2	',
+            '196	Levosalbutamol (Levalbuterol) : 50 mcg	Inhaler	200 MTD	79.29	',
+            '197	Erythromycin : 2% w/w	Cream	5 gm	4.62	',
+            '198	Salbutamol : 4 mg	Tablet	10 Tablet	3.02	',
+            '199	Salbutamol : 8 mg	Tablet	10 Tablet	3.26	',
+            '200	Erythromycin : 4% w/w	Ointment	30 gm	16.74',
+            '201	Erythromycin : 4% w/w	Ointment	20 gm	12.15	',
+            '202	Erythromycin Stearate : 100 mg	Tablet	10 Tablet	6.72	',
+            '203	Erythromycin Stearate : 250 mg	Tablet	10 Tablet	19.4	',
+            '204	Erythromycin Stearate : 500 mg	Tablet	10 Tablet	37.35	',
+            '205	Erythromycin Stearate : 100 mg	Suspension	60 ml	14.88	',
+            '206	Erythromycin Stearate : 125 mg	Suspension	30 ml	11.45	',
+            '207	Erythromycin Stearate : 125 mg	Suspension	60 ml	18.19	',
+            '208	Salbutamol : 4 mg	Capsule	10 Capsule	5.92	',
+            '209	Salbutamol : 8 mg	Capsule	10 Capsule	6.50	',
+            '210	Erythromycin : 100 mg	Drop	10 ml	10.5	',
+            '211	Salbutamol : 2 mg	Tablet	10 Tablet	0.75	',
+            '212	Erythromycin : 125 mg	Syrup	45 ml	17.37	',
+            '213	Salbutamol : 100 mcg	Inhaler	400 MTD	84.94	',
+            '214	Salbutamol : 100 mcg	Inhaler	200 MTD	68.50	',
+            '215	Erythromycin : 500 mg	Tablet	10 Tablet	46.26	',
+            '216	Erythromycin : 125 mg	Tablet	10 Tablet	12.87	',
+            '217	Erythromycin Estolate : 100 mg	Tablet	10 Tablet	8.49	',
+            '218	Erythromycin Estolate : 125 mg	Tablet	10 Tablet	10.27	',
+            '219	Erythromycin : 100 mg	Tablet	10 Tablet	8.49	',
+            '220	Rifampicin : 100 mg	Syrup	60 ml	17.38	',
+            '221	Erythromycin : 333 mg	Tablet	10 Tablet	19.08	',
+            '222	Rifampicin : 100 mg	Syrup	150 ml	42.16	',
+            '223	Rifampicin : 100 mg	Syrup	200 ml	66.59	',
+            '224	Rifampicin : 600 mg	Tablet	10 Tablet	52.98	',
+            '225	Rifampicin : 450 mg	Tablet	10 Tablet	40.34	',
+            '226	Erythromycin Stearate : 125 mg	Suspension	50 ml	15.43	',
+            '227	Rifampicin : 300 mg	Tablet	10 Tablet	25	',
+            '228	Rifampicin : 150 mg	Tablet	10 Tablet	13.33	',
+            '229	Rifampicin : 100 mg	Tablet	10 Tablet	9.93	',
+            '230	Rifampicin : 50 mg	Tablet	10 Tablet	5.72	',
+            '231	Rifampicin : 600 mg	Capsule	10 Capsule	60.26	',
+            '232	Rifampicin : 450 mg	Capsule	10 Capsule	45.69	',
+            '233	Rifampicin : 300 mg	Capsule	10 Capsule	31.61	',
+            '234	Rifampicin : 150 mg	Capsule	10 Capsule	17.62	',
+            '235	Famotidine : 10 mg	Tablet	14 Tablet	2.38	',
+            '236	Famotidine : 20 mg	Tablet	14 Tablet	1.98	',
+            '237	Ranitidine : 50 mg	Injection	2 ml	5.90	',
+            '238	Ranitidine : 25 mg	Injection	2 ml	3.18	',
+            '239	Ranitidine : 300 mg	Tablet	10 Tablet	10.11	',
+            '240	Ranitidine : 150 mg	Tablet	10 Tablet	5.42	',
+            '241	Ranitidine : 75 mg	Tablet	10 Tablet	3.49	',
+            '242	Pyritinol : 100 mg	Tablet	10 Tablet	49.72	',
+            '243	Pyritinol : 200 mg	Tablet	10 Tablet	97.96	',
+            '244	Famotidine : 40 mg	Tablet	14 Tablet	4.09	',
+            '245	Famotidine : 20 mg	Injection	2 ml	2.14	',
+            '246	Methyldopa : 250 mg	Tablet	10 Tablet	11.72	',
+            '247	Pyrantal Pamoate : 250 mg	Suspension	100 ml	55.79	',
+            '248	Metronidazole : 200 mg	Tablet	10 Tablet	4.2	',
+            '249	Pyrantal Pamoate : 250 mg	Tablet	3 Tablet	7.02	',
+            '250	Frusemide (Furosemide) : 10 mg	Injection	2 ml	2.81	    ',
+
+            '251	Frusemide (Furosemide) : 40 mg	Tablet	10 Tablet	4.12	',
+            '252	Frusemide (Furosemide) : 100 mg	Tablet	10 Tablet	4.46	',
+            '253	Furazolidone : 100 mg	Tablet	10 Tablet	1.8	',
+            '254	Furazolidone : 25 mg	Suspension	1000 ml	62	',
+            '255	Furazolidone : 25 mg	Suspension	60 ml	5.66	',
+            '256	Prednisolone : 5 mg	Suspension	60 ml	23.07	',
+            '257	Prednisolone : 5 mg	Syrup	30 ml	10.08	',
+            '258	Lincomycin : 300 mg	Injection	2 ml	9.01	',
+            '259	Gentamicin Sulphate : 20 mg	Injection	2 ml	5.82	',
+            '260	Gentamicin Sulphate : 40 mg	Injection	2 ml	6.22	',
+            '261	Gentamicin : 10 mg	Injection	2 ml	5.44	',
+            '262	Gentamicin : 3 mg	Drop	3 ml	4.94	',
+            '263	Gentamicin : 3 mg	Drop	5 ml	6.56	',
+            '264	Lincomycin : 500 mg	Capsule	10 Capsule	46.32	',
+            '265	Glipizide : 2.5 mg	Tablet	10 Tablet	3.32	',
+            '266	Glipizide : 5 mg	Tablet	10 Tablet	5.86	',
+            '267	Glipizide : 7.5 mg	Tablet	10 Tablet	5.69	',
+            '268	Glipizide : 10 mg	Tablet	10 Tablet	7.1	',
+            '269	Griseofulvin : 125 mg	Tablet	10 Tablet	6.62	',
+            '270	Griseofulvin : 250 mg	Tablet	10 Tablet	15.76	',
+            '271	Griseofulvin : 375 mg	Tablet	10 Tablet	18.12	',
+            '272	Griseofulvin : 500 mg	Tablet	10 Tablet	24.22	',
+            '273	Hydroxychloroquine Sulphate : 200 mg	Tablet	10 Tablet	10.24	',
+            '274	Prednisolone : 40 mg	Tablet	10 Tablet	30.79	',
+            '275	Ibuprofen : 200 mg	Tablet	10 Tablet	4.04	',
+            '276	Prednisolone : 30 mg	Tablet	10 Tablet	23.72	',
+            '277	Prednisolone : 20 mg	Tablet	10 Tablet	15.58	                ',
+            '278	Nevirapine : 50 mg	Suspension	1 ml	.98	       ',
+            '279	Ibuprofen : 400 mg	Tablet	10 Tablet	6.34	',
+            '280	Prednisolone : 10 mg	Tablet	10 Tablet	8.47	',
+            '281	Lincomycin : 250 mg	Capsule	10 Capsule	14.28	',
+            '282	Ibuprofen : 600 mg	Tablet	10 Tablet	9.85	',
+            '283	Ibuprofen : 400 mg	Capsule	10 Capsule	7.64	',
+            '284	Ibuprofen : 300 mg	Capsule	10 Capsule	6.9	',
+            '285	Ibuprofen : 600 mg	Capsule	10 Capsule	9.42	',
+            '286	Phenylbutazone : 100 mg	Tablet	10 Tablet	1.98	',
+            '287	Ibuprofen : 100 mg	Suspension	500 ml	60.59	',
+            '288	Ibuprofen : 100 mg	Suspension	60 ml	11.72	',
+            '289	Pheniramine Maleate : 22.75 mg	Injection	30 ml	13.35	',
+            '290	Pheniramine Maleate : 22.75 mg	Injection	10 ml	10.08	',
+            '291	Pheniramine Maleate : 22.75 mg	Injection	2 ml	3.58	',
+            '292	Pheniramine Maleate : 25 mg	Tablet	10 Tablet	2.76	',
+            '293	Dexibuprofen : 200 mg	Tablet	10 Tablet	9.82	',
+            '294	Pheniramine Maleate : 50 mg	Tablet	10 Tablet	3.45	',
+            '295	Dexibuprofen : 300 mg	Tablet	10 Tablet	13.84	',
+            '296	Dexibuprofen : 400 mg	Tablet	10 Tablet	17.88	',
+            '297	Iodochlorohydroxyquinoline : 250 mg	Tablet	10 Tablet	4.79	',
+            '298	Iodochlorohydroxyquinoline : 4% w/w	Cream	25 gm	8.02	',
+            '299	Levodopa : 500 mg	Tablet	10 Tablet	10.56	',
+            '300	Pentoxifylline (Pentoxyphylline) : 400 mg	Tablet	10 Tablet	21.14',
+            '301	Pentoxifylline (Pentoxyphylline) : 300 mg	Injection	15 ml	6.22	  ',
+            '302	Pentoxifylline (Pentoxyphylline) : 20 mg	Injection	15 ml	6.40	',
+            '303	Promethazine : 25 mg	Tablet	1 tablet	2.49	',
+            '304	Di-Iodohydroxyquinoline : 650 mg	Tablet	10 Tablet	6.02	',
+            '305	Pentazocine : 25 mg	Tablet	10 Tablet	13.64	',
+            '306	Pentazocine : 30 mg	Injection	1 ml	3.80	',
+            '307	Lincomycin : 250 mg	Tablet	10 Tablet	24.88	',
+            '308	Lincomycin : 500 mg	Tablet	10 Tablet	22.34	',
+            '309	Lincomycin : 125 mg	Suspension	60 ml	29.21	',
+            '310	Lincomycin : 300 mg	Injection	1 ml	6.5	',
+            '311	Lincomycin : 2%	Gel	10 gm	5.64	',
+            '312	Midazolam : 1 mg	Injection	1 ml	5.79	',
+            '313	Misoprostol : 100 mcg	Tablet	1 tablet	9.43	',
+            '314	Metronidazole : 400 mg	Tablet	10 Tablet	7.35	',
+            '315	Metronidazole : 600 mg	Tablet	10 Tablet	7.46	',
+            '316	Metronidazole : 10 mg	Gel	30 gm	9.2	',
+            '317	Metronidazole : 500 mg	Injection	100 ml	40.72	',
+            '318	Metronidazole : 5 mg	Injection	100 ml	15.7	',
+            '319	Benzathine Penicillin : 4800000 iu	Injection	1 Vial	22.88	',
+            '320	Metronidazole : 100 mg	Syrup	30 ml	5.82	',
+            '321	Metronidazole : 100 mg	Suspension	60 ml	9.08	',
+            '322	Benzathine Penicillin : 2400000 iu	Injection	1 Vial	14.02	',
+            '323	Benzathine Penicillin : 1200000 iu	Injection	1 Vial	10.06	',
+            '324	Benzathine Penicillin : 600000 iu	Injection	1 Vial	6.84	',
+            '325	Metronidazole : 200 mg	Suspension	30 ml	10.55	',
+            '326	Metronidazole : 200 mg	Suspension	60 ml	12.74	',
+            '327	Penicillin G Sodium : 500000 iu	Injection	1 Vial	5.18	',
+            '328	Pencillin G Sodium : 1000000 iu	Injection	1 Vial	6.70	',
+            '329	Metronidazole : 200 mg	Syrup	100 ml	18.54	',
+            '330	Metronidazole : 200 mg	Syrup	500 ml	70.44	',
+            '331	Penicillin G Potassium : 200000 iu	Tablet	6 Tablet	3.28	',
+            '332	Nalidixic Acid : 125 mg	Tablet	10 Tablet	5.46	',
+            '333	Penicillin G Potassium : 400000 iu	Tablet	6 Tablet	5.26	',
+            '334	Nalidixic Acid : 150 mg	Tablet	10 Tablet	6.42	',
+            '335	Nalidixic Acid : 250 mg	Tablet	10 Tablet	9.96	',
+            '336	Nalidixic Acid : 300 mg	Tablet	6 Tablet	6.96	',
+            '337	Nalidixic Acid : 500 mg	Tablet	8 Tablet	17.09	',
+            '338	Penicillin G Potassium : 800000 iu	Tablet	4 Tablet	6.23	',
+            '339	Nalidixic Acid : 1000 mg	Tablet	4 Tablet	14.78	',
+            '340	Nalidixic Acid : 300 mg	Suspension	30 ml	14.84	',
+            '341	Penicillin V (Phenoxymethyl Penicillin) : 250 mg	Tablet	10 Tablet	10.06',
+            '342	Penicillin V (Phenoxymethyl Penicillin) : 125 mg	Tablet	10 Tablet	5.86',
+            '343	Oxytetracycline : 50 mg	Injection	20 ml	13.63	',
+            '344	Oxytetracycline : 50 mg	Injection	30 ml	17.71	',
+            '345	Oxytetracycline : 50 mg	Injection	10 ml	6.60	',
+            '346	Oxytetracycline : 500 mg	Capsule	10 Capsule	10.35	',
+            '347	Oxytetracycline : 250 mg	Capsule	4 Capsule	2.70	',
+            '348	Oxcarbazepine : 150 mg	Tablet	10 Tablet	12.18	',
+            '349	Oxcarbazepine : 300 mg	Tablet	10 Tablet	23.16	',
+            '350	Oxcarbazepine : 450 mg	Tablet	10 Tablet	34.04	'
+
+
+
+        ];
+        // sectors.sort();
+
+        for (let i = 0; i < sectors.length; ++i) {
+            const option = document.createElement("option");
+            option.setAttribute("value", sectors[i]);
+            option.innerHTML = sectors[i];
+            dataList.appendChild(option);
+        }
+
+        dataList.querySelectorAll("option").forEach((el, idx, arr) => {
+            el.addEventListener("click", (e) => {
+                input.value = el.value;
+            });
+        });
+
+        input.addEventListener("focus", showList);
+
+        input.addEventListener("blur", () => {
+            setTimeout(() => {
+                dataList.classList.remove("show");
+            }, 300);
+        });
+
+        input.addEventListener("keyup", showList);
+
+        function showList() {
+            if (!!input.value) {
+                input.setAttribute("list", "dataList");
+                dataList.classList.remove("show");
+            } else {
+                input.removeAttribute("list");
+                dataList.classList.add("show");
+            }
+        }
+
+        input.addEventListener("change", () => {
+            if (!dataList.querySelector(`option[value='${input.value}']`)) {
+                input.value = "";
+            } else {
+                input.blur();
+            }
+        });
+
+
+
+
+    </script>
+
+
+        <div class="scrolltop float-right">
+            <a href="#home" id="back-to-top" class="scroll-top">
+                <img src="images/Scroll 1.png" alt="top">
+
+            </a>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+        <!-- home section ends -->
+
+        <script>
+            fun1()
+            function fun1() {
+                setTimeout(() => {
+                    document.getElementById("i1").style.visibility = "hidden";
+                    document.getElementById("i3").style.visibility = "visible";
+                    document.getElementById("icon").style.color = "#2659ff";
+                    // document.getElementById("ic").style.color = "#ddd";
+                    preloader();
+                    fun2()
+                }, 500);
+            }
+            function fun2() {
+                setTimeout(() => {
+                    document.getElementById("i1").style.visibility = "visible";
+                    document.getElementById("i2").style.visibility = "hidden";
+                    document.getElementById("icon").style.color = "#26ffa5";
+                    // document.getElementById("ic").style.color = "#26ffa5";
+                    fun3()
+                }, 500);
+            }
+            function fun3() {
+                setTimeout(() => {
+                    document.getElementById("i1").style.visibility = "visible";
+                    document.getElementById("i2").style.visibility = "visible";
+                    document.getElementById("i3").style.visibility = "hidden";
+                    document.getElementById("icon").style.color = "#26ccff";
+                    // document.getElementById("ic").style.color = "#26ccff";
+                    fun1()
+                }, 500);
+            }
+
+
+
+            //...........back-to-top..................
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 50) {
+                        $('#back-to-top').fadeIn();
+                    } else {
+                        $('#back-to-top').fadeOut();
+                    }
+                });
+                // scroll body to 0px on click
+                $('#back-to-top').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 2000);
+                    return false;
+                });
+            });
+
+        </script>
+        
+        <script>
+            function preloader() {
+                setTimeout(() => {
+                    document.getElementById("main").style.display = 'none';
+                }, 4000)
+
+            };
+        </script>
+
+
+        <!-- login and logout functions -->
+        <script>
+            log();
+
+            function log() {
+                var useremail = window.sessionStorage.getItem("Useremail");
+                var fname = window.sessionStorage.getItem("facebookdisplayname");
+                var fimg = window.sessionStorage.getItem("facebookimage");
+                if (useremail != null || undefined || NaN) {
+
+                    document.querySelector("#facename").innerHTML = useremail;
+                    var userimg = document.querySelector('#userimage');
+                    userimg.style.display = "none";
+                }
+                if (fname != null || undefined || NaN) {
+                    document.querySelector("#facename").innerHTML = fname;
+
+                }
+                if (fimg != null || undefined || NaN) {
+                    var userimg = document.querySelector('#userimage');
+                    var userpic = document.querySelector('#imgs');
+                    userpic.src = fimg;
+                    userimg.append(userpic);
+
+                }
+            }
+            //logout details
+            function logout() {
+                window.location.replace("http://localhost/COUNION%20PROJECT/html/login.html");
+                window.sessionStorage.clear();
+            }
+        </script>
+
+        <script>
+            const wrapper = document.querySelector(".wrapper");
+            const fileName = document.querySelector(".file-name");
+            const defaultBtn = document.querySelector("#default-btn");
+            const customBtn = document.querySelector("#custom-btn");
+            const cancelBtn = document.querySelector("#cancel-btn i");
+            const img = document.querySelector("#img");
+            let regExp = /[0-9a-zA-Z\^\&\'\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_ ]+$/;
+            function defaultBtnActive() {
+                defaultBtn.click();
+            }
+            defaultBtn.addEventListener("change", function () {
+                const file = this.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function () {
+                        const result = reader.result;
+                        img.src = result;
+                        wrapper.classList.add("active");
+                    }
+                    cancelBtn.addEventListener("click", function () {
+                        img.src = "";
+                        wrapper.classList.remove("active");
+                    })
+                    reader.readAsDataURL(file);
+                }
+                if (this.value) {
+                    let valueStore = this.value.match(regExp);
+                    fileName.textContent = valueStore;
+                }
+            });
+        </script>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyA0ZuS8wTVo1P8q9qOy0QScpI2el6wnRN8",
+        authDomain: "counion-22627.firebaseapp.com",
+        databaseURL: "https://counion-22627-default-rtdb.firebaseio.com",
+        projectId: "counion-22627",
+        storageBucket: "counion-22627.appspot.com",
+        messagingSenderId: "417520532568",
+        appId: "1:417520532568:web:223ca36c568bce02879e2d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+
+<script>
+// <!-- validation and smtp -->
+
+ // sending email from user to counionofficial
+      function sendmail() {
+
+        var name = $('#UserName').val();
+        var email = $('#Email').val();
+        var medicine = $('#autoComplete').val();
+        var mobile = $('#Mobile').val();
+        var comment = $('#Comment').val();
+      var dandt = new Date().toString();
+        var body = '<center> CO_UNION ❤️ </center> <br><br><br><b>Name 👨 : </b> ' + name + '<br><br><b>Email 📧 :</b> ' + email + '<br><br><b>Medicine 👨‍⚕️ :</b> ' + medicine +'<br><br><b>Mobile_Number 📲 :</b> ' + mobile + '<br><br><b>User_Comment 📖 :</b> ' + comment + '<br><br><br><center> THANK YOU </center>';
+
+        Email.send({
+          SecureToken: "25267947-f0e7-4c31-922b-999d78e162bc ",
+          To: 'counionusers@gmail.com',
+          From: "counionofficial@gmail.com",
+          Subject: "USER REQUESTED A MEDICINE : " + name,
+          Body: body,
+
+
+        }).then(
+
+          message => {
+            if (message == 'OK') {
+
+
+              const dbRef = firebase.database().ref();
+              dbRef.child("Requests").child(mobile).get().then((snapshot) => {
+                if (snapshot.exists()) {
+                  swal("This Contact Number is already used🤝" + name, "enter a diffrent data", "error");
+                } else {
+                  swal("Thank you 🤝" + name, "Order have been placed and responce will be recived soon", "success");
+                  console.log(snapshot.val());
+                  firebase.database().ref('Requests/' + mobile).set({
+                    USER_NAME: name,
+                    EMAIL: email,
+                    MEDICINE_DETAI:medicine,
+                    MOBILE_NUMBER: mobile,
+                    USER_MESSAGE: comment
+                  });
+
+                }
+              }).catch((error) => {
+                console.error(error);
+              });
+
+              // firebase.database().ref('users/' +mobile).set({
+              //   username: name,
+              //   email: email,
+              //  comment:comment,
+              // });
+
+            }
+            else {
+              console.error(message);
+              swal("Oops..... ❎", "There Is Error At Sending Message..", "error");
+
+            }
+          }
+        );
+      }
+
+
+      // sending email from counionofficial to user 
+      function recivemail() {
+
+        var name = $('#UserName').val();
+        var email = $('#Email').val();
+        var medicine = $('#autoComplete').val();
+        var myemail = "counionofficial@gmail.com";
+         var dandt = new Date().toString();
+        var body = '<center> CO_UNION ❤️ </center><br><br><br><b>From 😃 : CO_UNION ADMIN  <br><br><b> Responce ➡️ : Dear ' + name + ' Your order have been placed and  you will be contacted as soon as possible. For Futher details contact :' + myemail + ' and Please Subscribe to our WEBSITE in a newslwtter...   <br><br><b><br><br><b><center>ORDER DETAILS</center><br><br><br> NAME :'+name+'<br><br>EMAIL :'+email+' <br><br> MEDICINE:' + medicine +'<br><br><b><b>Date and Time ⏲️ :</b> ' + dandt + '<br><br><br><center>.........STAY HOME AND STAY SAFE..........</center> <br><br><br>------------------------------------------> THANK YOU <-----------------------------------------';
+
+        Email.send({
+          SecureToken: "25267947-f0e7-4c31-922b-999d78e162bc ",
+          To: email,
+          From: "counionofficial@gmail.com",
+          Subject: "TEAM CO-UNION✔️ ADMIN : Dhanush_Wodeyar ",
+          Body: body,
+
+        })
+      }
+      // validation of contact form and calling sendmail() and recivemail() 
+
+      function valid() {
+        var UserName = document.getElementById('UserName').value;
+        var Email = document.getElementById('Email').value;
+         var medicine = document.getElementById('autoComplete').value;
+        var Mobile = document.getElementById('Mobile').value;
+        var Comment = document.getElementById('Comment').value;
+        var Namevalid = /^[A-Za-z]{3,30}[0-9]{0,3}$/;
+        var Emailvalid = /^[A-Za-z\._\-[0-9]+[@][A-Za-z]+[\.]["com","co","in",\.,"edu",org]{2,6}$/;
+        var Mobilevalid = /^[6-9][0-9]{9}$/;
+        var img = document.querySelector("#img");
+        var pic=img.src;
+
+        if (UserName.replace(" ").length <= 0) {
+          document.getElementById('UserName').style.border = "red";
+          swal("Empty Field❎", "All Fields  Mandatory   Please Enter a required details", "error");
+          return false;
+        }
+        if (Email.replace(" ").length <= 0) {
+          swal("Empty Field❎", "All Fields  Mandatory   Please Enter a required details", "error");
+
+          return false;
+        }
+        if (medicine.replace(" ").length <= 0) {
+              document.getElementById('UserName').style.border = "red";
+              swal("Empty Field❎", "All Fields  Mandatory   Please Enter a required details", "error");
+              return false;
+          }
+        if (Mobile.replace(" ").length <= 0) {
+          swal("Empty Field❎", "All Fields  Mandatory   Please Enter a required details", "error");
+          return false;
+        }
+        if (Comment.replace(" ").length <= 1) {
+          swal("Empty Field❎", "All Fields  Mandatory   Please Enter a required details", "error");
+          return false;
+        }
+        if (!Email.match(Emailvalid)) {
+          swal("Invalid Email❎", "Enter a Valid Email", "error");
+          return false;
+        }
+        if (!Mobile.match(Mobilevalid)) {
+          swal("Invalid Phone Number❎", "Enter a valid Phone Number", "error");
+          return false;
+        }
+        if (!UserName.match(Namevalid)) {
+          swal("Invalid UserName❎", "Enter a valid UserName", "error");
+          return false;
+        }
+        if (pic.replace(" ").length <= 0) {
+              swal("Empty Field❎", "All Fields  Mandatory   Please Enter a required details", "error");
+
+              return false;
+          }
+        else {
+          sendmail();
+          const btn = document.getElementById('btn');
+          btnText = document.getElementById('btnText');
+          btnText.innerHTML = 'Thanks';
+          btn.classList.add('active1');
+          recivemail();
+          document.getElementById('Myform').reset();
+          return true;
+        }
+      }
+    </script>
+
+    <script>
+        
+    </script>
+
+</body>
+
+</html>
